@@ -23,3 +23,20 @@ class CfgFunctions
         };
     };
 };
+
+class CfgMods
+{
+	class Mod_Base;
+	class A6MD_zeus_modules : Mod_Base
+	{
+		picture = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
+		logo = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
+		logoOver = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
+		tooltipOwned = "6MD Zeus Modules";
+		overview = "6th Maroon Division Zeus Modules";
+		hideName = 1;
+		hidePicture = 0;
+		name = "6MD Zeus Modules";
+		dir = "A6MD\zeus_modules";
+	};
+};

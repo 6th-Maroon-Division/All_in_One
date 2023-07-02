@@ -1,0 +1,15 @@
+private["_unit", "_pos", "_emitter","_explosion","_exploname"];
+_unit = _this select 0;
+_pos = getPosATL _unit;
+_exploname = _unit getVariable ["explo", "HelicopterExploSmall"];
+private _emitter = "#particlesource" createVehicle _pos;
+_emitter setParticleClass "MediumDestructionFire";
+_emitter attachTo [_unit];
+sleep ((round random 3) +3);
+sleep 0.1;
+deleteVehicle _emitter;
+_pos = getPosATL _unit;
+deleteVehicle _unit;
+sleep 0.1;
+_explosion = createVehicle [_exploname, _pos];
+[[_explosion], 0] call ace_explosives_fnc_scriptedExplosive;

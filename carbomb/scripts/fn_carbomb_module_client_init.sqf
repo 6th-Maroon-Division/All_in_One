@@ -1,1 +1,1 @@
-remoteExec ["A6MD_fnc_carbomb_client_init",-2,true];
+remoteExec ["A6MD_fnc_carbomb_client_init",0,true];

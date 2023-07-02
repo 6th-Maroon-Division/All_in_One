@@ -161,6 +161,7 @@ class CfgFunctions
 			class trigger_explosivebarrelgreen_big{};
 			class trigger_explosivebarrelgreen_small{};
 			class trigger_explosivebarrelgreen_massive{};
+			class explosive_server_barrel{};
 		};
 	};
 };
