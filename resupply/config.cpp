@@ -15,7 +15,7 @@ class CfgFactionClasses
 	class NO_CATEGORY;
 	class A6MD_Supply: NO_CATEGORY
 	{
-		displayName = "Resupply (Air Drop)";
+		displayName = "6MD Resupply (Air Drop)";
 	};
 };
 
