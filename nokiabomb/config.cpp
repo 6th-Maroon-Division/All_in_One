@@ -79,7 +79,7 @@ class CfgSounds
 	class A6MD_nokiabomb_oldnokia
 	{
 		name = "A6MD_nokiabomb_oldnokia";
-		sound[] = {"\A6MD\zeus_modules\nokiabomb\sounds\oldNokia.ogg", db+10, 25};
+		sound[] = {"\A6MD\zeus_modules\nokiabomb\sounds\oldNokia.ogg", db+10, 1, 25};
 		titles[] = {0,"Nokia Phone Rings"};
 	};
 };
