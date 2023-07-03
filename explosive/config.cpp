@@ -58,7 +58,7 @@ class CfgVehicles
 		picture = "";
 		portrait = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
 
-		function = "A6MD_fnc_trigger_explosivebarrelgreen_big";			// Name of function triggered once conditions are met
+		function = "A6MD_fnc_explosive_module_green_big";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
 		isGlobal = 0;			// 0 for server only execution, 1 for remote execution on all clients upon mission start, 2 for persistent execution
 		isTriggerActivated = 0;	// 1 for module waiting until all synced triggers are activated
@@ -93,7 +93,7 @@ class CfgVehicles
 		picture = "";
 		portrait = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
 
-		function = "A6MD_fnc_trigger_explosivebarrelgreen_small";			// Name of function triggered once conditions are met
+		function = "A6MD_fnc_explosive_module_green_small";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
 		isGlobal = 0;			// 0 for server only execution, 1 for remote execution on all clients upon mission start, 2 for persistent execution
 		isTriggerActivated = 0;	// 1 for module waiting until all synced triggers are activated
@@ -128,7 +128,7 @@ class CfgVehicles
 		picture = "";
 		portrait = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
 
-		function = "A6MD_fnc_trigger_explosivebarrelgreen_massive";			// Name of function triggered once conditions are met
+		function = "A6MD_fnc_explosive_module_green_masive";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
 		isGlobal = 0;			// 0 for server only execution, 1 for remote execution on all clients upon mission start, 2 for persistent execution
 		isTriggerActivated = 0;	// 1 for module waiting until all synced triggers are activated
@@ -157,10 +157,10 @@ class CfgFunctions
 		class Explosive
 		{
 			file = "\A6MD\Zeus_Modules\explosive\scripts";
-			class moduleExplosiveBarrel{};
-			class trigger_explosivebarrelgreen_big{};
-			class trigger_explosivebarrelgreen_small{};
-			class trigger_explosivebarrelgreen_massive{};
+			class explosive_server_barrel_green{};
+			class explosive_module_green_big{};
+			class explosive_module_green_small{};
+			class explosive_module_green_masive{};
 			class explosive_server_barrel{};
 		};
 	};

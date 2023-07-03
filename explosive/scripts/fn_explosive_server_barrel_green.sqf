@@ -25,6 +25,7 @@ if (_activated) then {
 	_ExploBar addMPEventHandler ["MPHit", {
 		private["_unit", "_causedBy", "_damage","_instigator"];
 		params ["_unit", "_causedBy", "_damage", "_instigator"];
+		if(_damage <= 0.1)exitWith{};
 		_unit removeAllMPEventHandlers _thisEvent;
 		[_unit] remoteExec ["A6MD_fnc_explosive_server_barrel", 2, false];
 	}];
