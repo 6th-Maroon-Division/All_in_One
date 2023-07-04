@@ -1,11 +1,12 @@
 
-private ["_target", "_caller", "_actionId", "_arguments","_droneVelocity","_grenadeType","_pos","_gren","_magazine","_sgren"];
+private ["_target", "_caller", "_actionId", "_arguments","_droneVelocity","_grenadeType","_pos","_gren","_magazine","_sgren","_offset"];
 params ["_target", "_caller", "_actionId", "_arguments"];
-_droneVelocity = velocity _target;
-_grenadeType = "GrenadeHand";// diffrent grenade "mini_Grenade, GrenadeHand_stone"
-_pos = _target modelToWorld [0, 0, -0.2];
 _magazine = _target getVariable ["grenades",[]];
 if !(count _magazine == 0) then {
+	_droneVelocity = velocity _target;
+	_grenadeType = _target getVariable ["explo","GrenadeHand"];
+	_offset = _target getVariable ["offset",[0,0,-2]];
+	_pos = _target modelToWorld _offset;
 	_sgren = _magazine deleteAt 0;
 	detach _sgren;
 	deleteVehicle _sgren;

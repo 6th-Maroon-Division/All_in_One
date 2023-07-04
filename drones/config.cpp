@@ -91,6 +91,26 @@ class CfgFunctions
 			class drones_server_grenade_action_rem{};
 			class drones_server_grenade_action{};
 			class drones_server_grenade{};
+			class drones_server_grenade_hit{};
 		};
+	};
+};
+
+class CfgAmmo
+{
+	class Grenade;
+	class A6MD_Drone_Grenade_Impact : Grenade
+	{
+		explosionTime = 0;
+		hit = 8;
+		indirectHit = 8;
+		indirectHitRange = 6;
+		dangerRadiusHit = 60;
+		suppressionRadiusHit = 24;
+		typicalspeed = 18;
+		visibleFire = 0.5;
+		audibleFire = 0.05;
+		visibleFireTime = 1;
+		fuseDistance = 0;
 	};
 };
