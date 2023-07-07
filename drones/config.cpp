@@ -1,12 +1,12 @@
 class CfgPatches
 {
-	class A6MD_zeus_modules_drones
+	class A6MD_All_in_One_drones
 	{
 		author="6MD Dev Team";
         authors[]= {"Chilla55","Demsoft"};
 		units[] = {"A6MD_moduleDronesGrenade"};
 		requiredVersion = 1.0;
-		requiredAddons[] = {"A3_Modules_F","A6MD_zeus_modules_core"};
+		requiredAddons[] = {"A3_Modules_F","A6MD_All_in_One_core"};
 	};
 };
 
@@ -54,9 +54,9 @@ class CfgVehicles
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "Drone with Grenades";	// Name displayed in the menu
-		icon = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_drones_module_grenade";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -86,7 +86,7 @@ class CfgFunctions
 	{
 		class Drones
 		{
-			file = "\A6MD\Zeus_Modules\drones\scripts";
+			file = "\A6MD\All_in_One\drones\scripts";
 			class drones_module_grenade{};
 			class drones_server_grenade_action_rem{};
 			class drones_server_grenade_action{};

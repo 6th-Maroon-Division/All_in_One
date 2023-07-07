@@ -1,12 +1,12 @@
 class CfgPatches
 {
-	class A6MD_zeus_modules_Nokiabomb
+	class A6MD_All_in_One_Nokiabomb
 	{
 		author="6MD Dev Team";
         authors[]= {"Chilla55","Demsoft"};
 		units[] = {"A6MD_moduleNokiaBomb_Instant"};
 		requiredVersion = 1.0;
-		requiredAddons[] = {"A3_Modules_F","A6MD_zeus_modules_core","A6MD_zeus_modules_Explosive"};
+		requiredAddons[] = {"A3_Modules_F","A6MD_All_in_One_core","A6MD_All_in_One_Explosive"};
 	};
 };
 class CfgFactionClasses
@@ -48,9 +48,9 @@ class CfgVehicles
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "Nokia Bomb Instant";	// Name displayed in the menu
-		icon = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_nokiabomb_module_instant";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -79,7 +79,7 @@ class CfgSounds
 	class A6MD_nokiabomb_oldnokia
 	{
 		name = "A6MD_nokiabomb_oldnokia";
-		sound[] = {"\A6MD\zeus_modules\nokiabomb\sounds\oldNokia.ogg", db+10, 1, 25};
+		sound[] = {"\A6MD\All_in_One\nokiabomb\sounds\oldNokia.ogg", db+10, 1, 25};
 		titles[] = {0,"Nokia Phone Rings"};
 	};
 };
@@ -90,7 +90,7 @@ class CfgFunctions
 	{
 		class nokiabomb
 		{
-			file = "\A6MD\Zeus_Modules\nokiabomb\scripts";
+			file = "\A6MD\All_in_One\nokiabomb\scripts";
 			class nokiabomb_module_instant{};
 			class nokiaBomb_server_instant{};
 		};

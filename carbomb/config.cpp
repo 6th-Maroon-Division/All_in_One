@@ -1,12 +1,12 @@
 class CfgPatches
 {
-	class A6MD_zeus_modules_carbomb
+	class A6MD_All_in_One_carbomb
 	{
 		author="6MD Dev Team";
         authors[]= {"Chilla55","Demsoft"};
 		units[] = {"A6MD_moduleCarbomb_attach_small","A6MD_moduleCarbomb_attach_medium","A6MD_moduleCarbomb_attach_big","A6MD_moduleCarbomb_init","A6MD_moduleCarbomb_defuse"};
 		requiredVersion = 1.0;
-		requiredAddons[] = {"A3_Modules_F","A6MD_zeus_modules_core"};
+		requiredAddons[] = {"A3_Modules_F","A6MD_All_in_One_core"};
 	};
 };
 
@@ -55,9 +55,9 @@ class CfgVehicles
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "Carbomb Client init";	// Name displayed in the menu
-		icon = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_carbomb_module_client_init";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -91,9 +91,9 @@ class CfgVehicles
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "Carbomb small attach to vehicle";	// Name displayed in the menu
-		icon = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_carbomb_module_attach_small";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -128,9 +128,9 @@ class CfgVehicles
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "Carbomb medium attach to vehicle";	// Name displayed in the menu
-		icon = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_carbomb_module_attach_medium";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -165,9 +165,9 @@ class CfgVehicles
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "Carbomb big attach to vehicle";	// Name displayed in the menu
-		icon = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_carbomb_module_attach_big";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -202,9 +202,9 @@ class CfgVehicles
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "defuse Carbomb";	// Name displayed in the menu
-		icon = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\Zeus_Modules\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_carbomb_module_defuse";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -235,7 +235,7 @@ class CfgFunctions
 	{
 		class Carbomb
 		{
-			file = "\A6MD\Zeus_Modules\carbomb\scripts";
+			file = "\A6MD\All_in_One\carbomb\scripts";
 			class carbomb_client_defuse{};
 			class carbomb_client_examine{};
 			class carbomb_client_init{};
