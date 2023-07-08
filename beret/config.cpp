@@ -141,7 +141,7 @@ class CfgVehicles
         author = "Bohemia Interactive";
         scope = 2;
         displayName = "Beret Holder";
-        model = "\A6MD\All_in_one\beret\data\invisible_model.p3d"        
+        model = "\A6MD\All_in_one\beret\data\invisible_model.p3d";
         picture = "\A6MD\All_in_one\core\icons\Logo_6MD.paa";    //(Optional) replace with your icon image location
         hiddenSelectionsTextures[] = 
         {
@@ -156,7 +156,7 @@ class CfgVehicles
         author = "Bohemia Interactive";
         scope = 2;
         displayName = "Beret Holder with LR Radio";
-        model = "\A6MD\All_in_one\beret\data\invisible_model.p3d"        
+        model = "\A6MD\All_in_one\beret\data\invisible_model.p3d";
         picture = "\A6MD\All_in_one\core\icons\Logo_6MD.paa";    //(Optional) replace with your icon image location
         hiddenSelectionsTextures[] = 
         {
@@ -171,6 +171,6 @@ class CfgVehicles
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 		tf_subtype = "digital_lr";
 		tf_range = 10000;
-    }
+    };
 };
 
