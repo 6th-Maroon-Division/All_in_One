@@ -1,0 +1,27 @@
+name: Build_Release
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Setup HEMTT
+              uses: arma-actions/hemtt@v1
+            - name: Run HEMTT build
+              run: hemtt release
+            - name: Rename build folder
+              run: mv .hemttout/release .hemttout/@6md_aio
+            - name: Upload Release
+              uses: actions/upload-artifact@v3
+              with:
+                  name: 6MD_AIO
+                  path: .hemttout/@*
+            - uses: arma-actions/workshop-upload@v1
+              with:
+                appId: '107410'    # default
+                itemId: '3001061103' # Id of item to update
+                contentPath: 'releases/@6md_aio'
+                changelog: 'https://github.com/6th-Maroon-Division/All_in_One'
+              env:
+                STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+                STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
