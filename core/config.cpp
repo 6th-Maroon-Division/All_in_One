@@ -32,11 +32,11 @@ class CfgMods
 		picture = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
 		logo = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
 		logoOver = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
-		tooltipOwned = "6MD Zeus Modules";
-		overview = "6th Maroon Division Zeus Modules";
+		tooltipOwned = "6MD AIO";
+		overview = "6th Maroon Division Zeus Modules, Custom Insignias, Custom Berets and more";
 		hideName = 1;
 		hidePicture = 0;
-		name = "6MD Zeus Modules";
+		name = "6MD All in One mod";
 		dir = "A6MD\All_in_One";
 	};
 };
