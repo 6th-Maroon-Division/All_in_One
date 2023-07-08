@@ -25,16 +25,16 @@ class A6MD_moduleResupply3Mag : Module_F
 	mapSize = 1;
 	author = "Demsoft";
 	vehicleClass = "Modules";
-	category = A6MD_Supply;
+	category = "A6MD_Supply";
 	side = 7;
 
 	scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 	scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 	displayName = "Resupply (Air Drop - 3 Mag)";	// Name displayed in the menu
-	icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+	icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 	picture = "";
-	portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+	portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 	function = "A6MD_fnc_moduleResupply3Mag";			// Name of function triggered once conditions are met
 	functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -62,16 +62,16 @@ class A6MD_moduleResupply5Mag : Module_F
 	mapSize = 1;
 	author = "Demsoft";
 	vehicleClass = "Modules";
-	category = A6MD_Supply;
+	category = "A6MD_Supply";
 	side = 7;
 
 	scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 	scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 	displayName = "Resupply (Air Drop - 5 Mag)";	// Name displayed in the menu
-	icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+	icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 	picture = "";
-	portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+	portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 	function = "A6MD_fnc_moduleResupply5Mag";			// Name of function triggered once conditions are met
 	functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -98,16 +98,16 @@ class A6MD_moduleResupplyCache : Module_F
 	mapSize = 1;
 	author = "Demsoft";
 	vehicleClass = "Modules";
-	category = A6MD_Supply;
+	category = "A6MD_Supply";
 	side = 7;
 
 	scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 	scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 	displayName = "Resupply (Air Drop - Cache)";	// Name displayed in the menu
-	icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+	icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 	picture = "";
-	portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+	portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 	function = "A6MD_fnc_moduleResupplyCache";			// Name of function triggered once conditions are met
 	functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -135,16 +135,16 @@ class A6MD_moduleResupplyLaunchers : Module_F
 	mapSize = 1;
 	author = "Demsoft";
 	vehicleClass = "Modules";
-	category = A6MD_Supply;
+	category = "A6MD_Supply";
 	side = 7;
 
 	scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 	scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 	displayName = "Resupply (Air Drop - Launchers)";	// Name displayed in the menu
-	icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+	icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 	picture = "";
-	portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+	portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 	function = "A6MD_fnc_moduleResupplyLaunchers";			// Name of function triggered once conditions are met
 	functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -172,16 +172,16 @@ class A6MD_moduleResupplyMedicalCache : Module_F
 	mapSize = 1;
 	author = "Demsoft";
 	vehicleClass = "Modules";
-	category = A6MD_Supply;
+	category = "A6MD_Supply";
 	side = 7;
 
 	scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 	scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 	displayName = "Resupply (Air Drop - Medical Cache)";	// Name displayed in the menu
-	icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+	icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 	picture = "";
-	portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+	portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 	function = "A6MD_fnc_moduleResupplyMedicalCache";			// Name of function triggered once conditions are met
 	functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -209,16 +209,16 @@ class A6MD_moduleResupplyMedicalField : Module_F
 	mapSize = 1;
 	author = "Demsoft";
 	vehicleClass = "Modules";
-	category = A6MD_Supply;
+	category = "A6MD_Supply";
 	side = 7;
 
 	scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 	scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 	displayName = "Resupply (Air Drop - Medical Field)";	// Name displayed in the menu
-	icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+	icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 	picture = "";
-	portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+	portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 	function = "A6MD_fnc_moduleResupplyMedicalField";			// Name of function triggered once conditions are met
 	functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -246,16 +246,16 @@ class A6MD_moduleResupplyWeaponCache : Module_F
 	mapSize = 1;
 	author = "Demsoft";
 	vehicleClass = "Modules";
-	category = A6MD_Supply;
+	category = "A6MD_Supply";
 	side = 7;
 
 	scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 	scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 	displayName = "Resupply (Air Drop - Weapon Cache)";	// Name displayed in the menu
-	icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+	icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 	picture = "";
-	portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+	portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 	function = "A6MD_fnc_moduleResupplyWeaponCache";			// Name of function triggered once conditions are met
 	functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined

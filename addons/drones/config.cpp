@@ -1,18 +1,24 @@
 class CfgPatches
 {
-	class A6MD_All_in_One_Nokiabomb
+	class A6MD_All_in_One_drones
 	{
 		author="6MD Dev Team";
         authors[]= {"Chilla55","Demsoft"};
-		units[] = {"A6MD_moduleNokiaBomb_Instant"};
+		units[] = {"A6MD_moduleDronesGrenade"};
 		requiredVersion = 1.0;
-		requiredAddons[] = {"A3_Modules_F","A6MD_All_in_One_core","A6MD_All_in_One_Explosive"};
+		requiredAddons[] = {"A3_Modules_F","A6MD_All_in_One_core"};
 	};
 };
+
 class CfgFactionClasses
 {
-	class A6MD_Explosives;
+	class NO_CATEGORY;
+	class A6MD_Drones: NO_CATEGORY
+	{
+		displayName = "6MD Drones";
+	};
 };
+
 class CfgVehicles 
 {
 	class Logic;
@@ -36,23 +42,23 @@ class CfgVehicles
 		class EmptyDetector;
 		};
 	};
-	class A6MD_moduleNokiaBomb_Instant : Module_F
+	class A6MD_moduleDronesGrenade : Module_F
 	{
 		mapSize = 1;
 		author = "Chilla55";
 		vehicleClass = "Modules";
-		category = A6MD_Explosives;
+		category = "A6MD_Drones";
 		side = 7;
 
 		scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
-		displayName = "Nokia Bomb Instant";	// Name displayed in the menu
-		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		displayName = "Drone with Grenades";	// Name displayed in the menu
+		icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
-		function = "A6MD_fnc_nokiabomb_module_instant";			// Name of function triggered once conditions are met
+		function = "A6MD_fnc_drones_module_grenade";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
 		isGlobal = 0;			// 0 for server only execution, 1 for remote execution on all clients upon mission start, 2 for persistent execution
 		isTriggerActivated = 0;	// 1 for module waiting until all synced triggers are activated
@@ -62,37 +68,49 @@ class CfgVehicles
 		class ArgumentsBaseUnits : ArgumentsBaseUnits {
 			class Units : Units
 			{
-				property = "A6MD_moduleNokiaBomb_Instant_Units";
+				property = "A6MD_moduleDronesGrenade_Units";
 			};
 		};
 		class ModuleDescription : ModuleDescription
 		{
-			description = "Nokia Bomb Instant explode";
+			description = "Drone with 4 Grenades";
 			sync[] = {};
 		};
 	};
 };
 
-class CfgSounds
-{
-	sounds[] = {};
-	class A6MD_nokiabomb_oldnokia
-	{
-		name = "A6MD_nokiabomb_oldnokia";
-		sound[] = {"\A6MD\All_in_One\nokiabomb\sounds\oldNokia.ogg", db+10, 1, 25};
-		titles[] = {0,"Nokia Phone Rings"};
-	};
-};
 
 class CfgFunctions
 {
 	class A6MD
 	{
-		class nokiabomb
+		class Drones
 		{
-			file = "\A6MD\All_in_One\nokiabomb\scripts";
-			class nokiabomb_module_instant{};
-			class nokiaBomb_server_instant{};
+			file = "\A6MD\All_in_One\addons\drones\scripts";
+			class drones_module_grenade{};
+			class drones_server_grenade_action_rem{};
+			class drones_server_grenade_action{};
+			class drones_server_grenade{};
+			class drones_server_grenade_hit{};
 		};
+	};
+};
+
+class CfgAmmo
+{
+	class Grenade;
+	class A6MD_Drone_Grenade_Impact : Grenade
+	{
+		explosionTime = 0;
+		hit = 8;
+		indirectHit = 8;
+		indirectHitRange = 6;
+		dangerRadiusHit = 60;
+		suppressionRadiusHit = 24;
+		typicalspeed = 18;
+		visibleFire = 0.5;
+		audibleFire = 0.05;
+		visibleFireTime = 1;
+		fuseDistance = 0;
 	};
 };

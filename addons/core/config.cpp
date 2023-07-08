@@ -15,7 +15,7 @@ class CfgFunctions
     {
         class core
         {
-			file = "\A6MD\All_in_One\core\scripts";
+			file = "\A6MD\All_in_One\addons\core\scripts";
             class init
             {
                 postInit=1;
@@ -29,9 +29,9 @@ class CfgMods
 	class Mod_Base;
 	class A6MD_All_in_One : Mod_Base
 	{
-		picture = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
-		logo = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
-		logoOver = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+		picture = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
+		logo = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
+		logoOver = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 		tooltipOwned = "6MD AIO";
 		overview = "6th Maroon Division Zeus Modules, Custom Insignias, Custom Berets and more";
 		hideName = 1;

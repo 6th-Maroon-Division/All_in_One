@@ -47,16 +47,16 @@ class CfgVehicles
 		mapSize = 1;
 		author = "Demsoft";
 		vehicleClass = "Modules";
-		category = A6MD_Explosives;
+		category = "A6MD_Explosives";
 		side = 7;
 
 		scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "ExplosiveBarrel Big (Green)";	// Name displayed in the menu
-		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_explosive_module_green_big";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -82,16 +82,16 @@ class CfgVehicles
 		mapSize = 1;
 		author = "Demsoft";
 		vehicleClass = "Modules";
-		category = A6MD_Explosives;
+		category = "A6MD_Explosives";
 		side = 7;
 
 		scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "ExplosiveBarrel Small (Green)";	// Name displayed in the menu
-		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_explosive_module_green_small";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -117,16 +117,16 @@ class CfgVehicles
 		mapSize = 1;
 		author = "Demsoft";
 		vehicleClass = "Modules";
-		category = A6MD_Explosives;
+		category = "A6MD_Explosives";
 		side = 7;
 
 		scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "ExplosiveBarrel Massive (Green)";	// Name displayed in the menu
-		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_explosive_module_green_masive";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -156,7 +156,7 @@ class CfgFunctions
 	{
 		class Explosive
 		{
-			file = "\A6MD\All_in_One\explosive\scripts";
+			file = "\A6MD\All_in_One\addons\explosive\scripts";
 			class explosive_server_barrel_green{};
 			class explosive_module_green_big{};
 			class explosive_module_green_small{};

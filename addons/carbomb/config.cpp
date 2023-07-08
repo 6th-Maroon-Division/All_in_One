@@ -48,16 +48,16 @@ class CfgVehicles
 		mapSize = 1;
 		author = "Chilla55";
 		vehicleClass = "Modules";
-		category = A6MD_Carbomb;
+		category = "A6MD_Carbomb";
 		side = 7;
 
 		scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "Carbomb Client init";	// Name displayed in the menu
-		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_carbomb_module_client_init";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -84,16 +84,16 @@ class CfgVehicles
 		mapSize = 1;
 		author = "Chilla55";
 		vehicleClass = "Modules";
-		category = A6MD_Carbomb;
+		category = "A6MD_Carbomb";
 		side = 7;
 
 		scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "Carbomb small attach to vehicle";	// Name displayed in the menu
-		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_carbomb_module_attach_small";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -121,16 +121,16 @@ class CfgVehicles
 		mapSize = 1;
 		author = "Chilla55";
 		vehicleClass = "Modules";
-		category = A6MD_Carbomb;
+		category = "A6MD_Carbomb";
 		side = 7;
 
 		scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "Carbomb medium attach to vehicle";	// Name displayed in the menu
-		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_carbomb_module_attach_medium";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -158,16 +158,16 @@ class CfgVehicles
 		mapSize = 1;
 		author = "Chilla55";
 		vehicleClass = "Modules";
-		category = A6MD_Carbomb;
+		category = "A6MD_Carbomb";
 		side = 7;
 
 		scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "Carbomb big attach to vehicle";	// Name displayed in the menu
-		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_carbomb_module_attach_big";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -195,16 +195,16 @@ class CfgVehicles
 		mapSize = 1;
 		author = "Chilla55";
 		vehicleClass = "Modules";
-		category = A6MD_Carbomb;
+		category = "A6MD_Carbomb";
 		side = 7;
 
 		scope = 2;				// Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
 		displayName = "defuse Carbomb";	// Name displayed in the menu
-		icon = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
+		icon = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";				// Map icon. Delete this entry to use the default icon
 		picture = "";
-		portrait = "\A6MD\All_in_One\core\icons\Logo_6MD.paa";
+		portrait = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";
 
 		function = "A6MD_fnc_carbomb_module_defuse";			// Name of function triggered once conditions are met
 		functionPriority = 1;	// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
@@ -235,7 +235,7 @@ class CfgFunctions
 	{
 		class Carbomb
 		{
-			file = "\A6MD\All_in_One\carbomb\scripts";
+			file = "\A6MD\All_in_One\addons\carbomb\scripts";
 			class carbomb_client_defuse{};
 			class carbomb_client_examine{};
 			class carbomb_client_init{};

@@ -1,2 +1,11 @@
 name = "6th Maroon Division All in one mod"
-prefix = "A6MD"
+author = "6MD Dev Team"
+prefix = "All_in_One"
+mainprefix = "A6MD"
+
+[version]
+major = 1 # Overrides path when set
+minor = 0
+patch = 0
+build = 1 # Optional
+git_hash = 0 # Default: 8

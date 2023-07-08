@@ -16,9 +16,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD [Black]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_Black_W_Gold_Out_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_Black_W_Gold_Out_co.paa"};
     };
 
     class Beret_6MD_Recruit_Mid_Tan: H_Beret_Colonel
@@ -26,9 +26,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD Recruit [Mid Tan]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_MidTan_Recruit_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_MidTan_Recruit_co.paa"};
     };
 
     class Beret_AEU_Black: H_Beret_Colonel
@@ -36,9 +36,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, AEU [Black]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_AEU_Black_W_Gold_Out_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_AEU_Black_W_Gold_Out_co.paa"};
     };
 
     class Beret_6MD_Marine_Green: H_Beret_Colonel
@@ -46,9 +46,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD [Marine Green]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_Marine_Green_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_Marine_Green_co.paa"};
     };
 
     class Beret_6MD_Maroon: H_Beret_Colonel
@@ -56,9 +56,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD [Maroon]";     
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_Maroon_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_Maroon_co.paa"};
     };
 
     class Beret_6MD_Paracommando: H_Beret_Colonel
@@ -66,9 +66,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD [Paracommando]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_Maroon_Jeppie_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_Maroon_Jeppie_co.paa"};
     };
 
     class Beret_6MD_Brown_Light: H_Beret_Colonel
@@ -76,9 +76,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD [Brown, Light]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_Tan2_Jeppie_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_Tan2_Jeppie_co.paa"};
     };            
 
     class Beret_6MD_Brown_Dark: H_Beret_Colonel
@@ -86,9 +86,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD [Brown, Dark]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_Brown2_Jeppie_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_Brown2_Jeppie_co.paa"};
     };
 
     class Beret_6MD_Tan: H_Beret_Colonel
@@ -96,9 +96,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD [Tan]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_Tan_Jeppie_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_Tan_Jeppie_co.paa"};
     };
 
     class Beret_6MD_Orange: H_Beret_Colonel
@@ -106,9 +106,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD [Orange]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_Brown_Jeppie_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_Brown_Jeppie_co.paa"};
     };      
 
     class Beret_6MD_Zulu_Force: H_Beret_Colonel
@@ -116,9 +116,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD [Zulu Force]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_Dark_Green_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_Dark_Green_co.paa"};
     };         
 
     class Beret_6MD_Light_Tan: H_Beret_Colonel
@@ -126,9 +126,9 @@ class CfgWeapons
         author="Demsoft";
         scope=2;
         displayName="Beret, 6MD [Tan, Light]";        
-        picture="\A6MD\All_in_one\core\icons\Logo_6MD.paa";   
+        picture="\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";   
         hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"\A6MD\All_in_one\beret\icons\Beret_6MD_Tan3_Jeppie_co.paa"};
+        hiddenSelectionsTextures[] = {"\A6MD\All_in_One\addons\beret\icons\Beret_6MD_Tan3_Jeppie_co.paa"};
     };   
 };
 
@@ -141,11 +141,11 @@ class CfgVehicles
         author = "Bohemia Interactive";
         scope = 2;
         displayName = "Beret Holder";
-        model = "\A6MD\All_in_one\beret\data\invisible_model.p3d";
-        picture = "\A6MD\All_in_one\core\icons\Logo_6MD.paa";    //(Optional) replace with your icon image location
+        model = "\A6MD\All_in_One\addons\beret\data\invisible_model.p3d";
+        picture = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";    //(Optional) replace with your icon image location
         hiddenSelectionsTextures[] = 
         {
-          "\A6MD\All_in_one\beret\icons\invisible_model_texture.paa" //replace with your texture location
+          "\A6MD\All_in_One\addons\beret\icons\invisible_model_texture.paa" //replace with your texture location
         };
         maximumLoad = 6.1;
         mass = 0.1;        
@@ -156,11 +156,11 @@ class CfgVehicles
         author = "Bohemia Interactive";
         scope = 2;
         displayName = "Beret Holder with LR Radio";
-        model = "\A6MD\All_in_one\beret\data\invisible_model.p3d";
-        picture = "\A6MD\All_in_one\core\icons\Logo_6MD.paa";    //(Optional) replace with your icon image location
+        model = "\A6MD\All_in_One\addons\beret\data\invisible_model.p3d";
+        picture = "\A6MD\All_in_One\addons\core\icons\Logo_6MD.paa";    //(Optional) replace with your icon image location
         hiddenSelectionsTextures[] = 
         {
-          "\A6MD\All_in_one\beret\icons\invisible_model_texture.paa" //replace with your texture location
+          "\A6MD\All_in_One\addons\beret\icons\invisible_model_texture.paa" //replace with your texture location
         };
         maximumLoad = 6.1;
         mass = 0.1; 

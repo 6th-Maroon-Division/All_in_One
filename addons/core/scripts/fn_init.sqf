@@ -2,5 +2,5 @@ private _medicalSupplies = ["kat_aatKit", "kat_accuvac", "ACE_adenosine", "kat_X
 
 private _survivalItems = ["ACE_Banana", "ACE_Can_Franta", "ACE_Can_RedGull", "ACE_Can_Spirit", "ACE_Canteen", "ACE_Canteen_Empty", "ACE_Canteen_Half", "ACE_Humanitarian_Ration", "ACE_MRE_BeefStew", "ACE_MRE_ChickenTikkaMasala", "ACE_MRE_ChickenHerbDumplings", "ACE_MRE_CreamChickenSoup", "ACE_MRE_CreamTomatoSoup", "ACE_MRE_LambCurry", "ACE_MRE_MeatballsPasta", "ACE_MRE_SteakVegetables", "ACE_WaterBottle", "ACE_WaterBottle_Empty", "ACE_WaterBottle_Half"];
 
-[_medicalSupplies, "Medical", "A6MD\All_in_One\core\icons\medical.paa", 0] call ace_arsenal_fnc_addRightPanelButton;
-[_survivalItems, "Survival", "A6MD\All_in_One\core\icons\survival.paa", 1] call ace_arsenal_fnc_addRightPanelButton;
+[_medicalSupplies, "Medical", "A6MD\All_in_One\addons\core\icons\medical.paa", 0] call ace_arsenal_fnc_addRightPanelButton;
+[_survivalItems, "Survival", "A6MD\All_in_One\addons\core\icons\survival.paa", 1] call ace_arsenal_fnc_addRightPanelButton;

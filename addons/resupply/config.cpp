@@ -31,7 +31,7 @@ class CfgFunctions
 	{
 		class Supports
 		{
-			file = "\A6MD\All_in_One\resupply\scripts";
+			file = "\A6MD\All_in_One\addons\resupply\scripts";
 			class moduleResupply3Mag{};
 			class moduleResupply5Mag{};
 			class moduleResupplyCache{};
