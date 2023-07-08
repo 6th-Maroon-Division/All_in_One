@@ -9,3 +9,6 @@ minor = 0
 patch = 0
 build = 1 # Optional
 git_hash = 0 # Default: 8
+
+[hemtt.release]
+archive = false
