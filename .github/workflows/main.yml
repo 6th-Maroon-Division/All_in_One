@@ -15,4 +15,4 @@ jobs:
               uses: actions/upload-artifact@v3
               with:
                   name: 6MD_AIO
-                  path: release/@*
+                  path: release/*
