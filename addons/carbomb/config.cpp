@@ -5,7 +5,7 @@ class CfgPatches
 		author="6MD Dev Team";
         authors[]= {"Chilla55","Demsoft"};
 		units[] = {"A6MD_moduleCarbomb_attach_small","A6MD_moduleCarbomb_attach_medium","A6MD_moduleCarbomb_attach_big","A6MD_moduleCarbomb_init","A6MD_moduleCarbomb_defuse"};
-		requiredVersion = 1.0;
+		requiredVersion = 1.7;
 		requiredAddons[] = {"A3_Modules_F","A6MD_All_in_One_core"};
 	};
 };
