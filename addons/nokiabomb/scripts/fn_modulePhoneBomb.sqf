@@ -32,7 +32,7 @@ if (_activated) then {
 		        sleep 9.5;
 		
 		        deleteVehicle _logic;
-		sleep 0.1
+		sleep 0.1;
 		        if (isServer) then {
 			_bomb = createVehicle ["IEDLandSmall_Remote_Ammo", _pos, [], 0, "CAN_COLLIDE"];
 			            sleep 0.1;
