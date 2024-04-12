@@ -5,9 +5,9 @@ mainprefix = "A6MD"
 
 [version]
 major = 1 # Overrides path when set
-minor = 0
+minor = 1
 patch = 1
-build = 1 # Optional
+build = 3 # Optional
 git_hash = 0 # Default: 8
 
 [hemtt.release]
