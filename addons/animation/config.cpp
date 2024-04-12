@@ -55,7 +55,7 @@ class CfgGesturesMale {
 	class States {
 		class ace_Gestures_forward;
 		class Demsoft6MD_GiveTheBird: ace_Gestures_forward {
-			file="\A6MD\All_in_One\addons\anim\dat_bird.rtm";
+			file="\A6MD\All_in_One\addons\animation\anim\dat_bird.rtm";
 			looped = 0;
 			speed = 0.62051;
 			mask = "handsWeapon_pst";
