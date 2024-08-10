@@ -4,6 +4,7 @@ class CfgPatches
 	{
 		units[]=
 		{
+			"MD_Flag",
 			"White_6MD_Flag",
             "Maroon_6MD_Flag",
             "Black_6MD_Flag",
@@ -22,78 +23,71 @@ class CfgPatches
 };
 class CfgVehicles
 {
-	class FlagPole_F;
-	class White_6MD_Flag: FlagPole_F
+	class FlagCarrier;
+	class MD_Flag: FlagCarrier
 	{
-        mapSize = 1;
-		author = "Demsoft";
-		vehicleClass = "Modules";
-		category = "Supports";
-		side = 7;
-
-		scope=2;                // Editor visibility; 2 will show it in the menu, 1 will hide it.
-		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
-
-		accuracy=10000;
-		displayName="Flag - 6MD (White)";
+		scope=0;
+		scopeCurator=0;
+		author="Demsoft,Chilla55";
+		vehicleClass="Flag";
+		editorSubcategory="EdSubcat_Flags";
 		nameSound="flag";
-		class EventHandlers
+		class SimpleObject
 		{
-			init="(_this select 0) setFlagTexture ""\A6MD\All_in_One\addons\flags\flags\6MD\White_6MD_Flag_co.paa""";
+			eden=0;
+			animate[]=
+			{
+				
+				{
+					"flag",
+					0
+				}
+			};
+			hide[]={};
+			verticalOffset=3.977;
+			verticalOffsetWorld=0;
+			init="''";
 		};
 	};
-    	class Maroon_6MD_Flag: FlagPole_F
+	class White_6MD_Flag: MD_Flag
 	{
-        mapSize = 1;
-		author = "Demsoft";
-		vehicleClass = "Modules";
-		category = "Supports";
-		side = 7;
-
 		scope=2;                // Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
-		accuracy=10000;
+		displayName="Flag - 6MD (White)";
+		class EventHandlers
+		{
+			init="(_this select 0) setFlagTexture '\A6MD\All_in_One\addons\flags\flags\6MD\White_6MD_Flag_co.paa'";
+		};
+	};
+    	class Maroon_6MD_Flag: MD_Flag
+	{
+		scope=2;                // Editor visibility; 2 will show it in the menu, 1 will hide it.
+		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
+
 		displayName="Flag - 6MD (Maroon)";
-		nameSound="flag";
 		class EventHandlers
 		{
 			init="(_this select 0) setFlagTexture ""\A6MD\All_in_One\addons\flags\flags\6MD\Red_6MD_Flag_co.paa""";
 		};
 	};
-    	class Black_6MD_Flag: FlagPole_F
+    	class Black_6MD_Flag: MD_Flag
 	{
-        mapSize = 1;
-		author = "Demsoft";
-		vehicleClass = "Modules";
-		category = "Supports";
-		side = 7;
-
 		scope=2;                // Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
-		accuracy=10000;
 		displayName="Flag - 6MD (Black)";
-		nameSound="flag";
 		class EventHandlers
 		{
 			init="(_this select 0) setFlagTexture ""\A6MD\All_in_One\addons\flags\flags\6MD\Black_6MD_Flag_co.paa""";
 		};
 	};
-        	class Black_Invert_6MD_Flag: FlagPole_F
+        	class Black_Invert_6MD_Flag: MD_Flag
 	{
-        mapSize = 1;
-		author = "Demsoft";
-		vehicleClass = "Modules";
-		category = "Supports";
-		side = 7;
-
 		scope=2;                // Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 2;		// Curator visibility; 2 will show it in the menu, 1 will hide it.
 
-		accuracy=10000;
 		displayName="Flag - 6MD (Inverted)";
-		nameSound="flag";
 		class EventHandlers
 		{
 			init="(_this select 0) setFlagTexture ""\A6MD\All_in_One\addons\flags\flags\6MD\Black_Invert_6MD_Flag_co.paa""";
