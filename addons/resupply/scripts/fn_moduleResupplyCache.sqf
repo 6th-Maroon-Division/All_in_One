@@ -61,7 +61,7 @@ if (_activated) then {
 			_box addItemCargoGlobal ["ACE_tourniquet", 3];
 		} forEach allPlayers;
 		_box addItemCargoGlobal ["ACE_surgicalKit", 1];
-		_box addWeaponCargoGlobal ["CUP_launch_M136", 5];
+		//_box addWeaponCargoGlobal ["CUP_launch_M136", 5];
 		deleteVehicle _logic;
 
 		{

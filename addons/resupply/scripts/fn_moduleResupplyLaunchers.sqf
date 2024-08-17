@@ -43,7 +43,7 @@ if (_activated) then {
 		{
 			_box addMagazineCargoGlobal [secondaryWeaponMagazine _x select 0, 4];
 		} forEach allPlayers;
-		_box addWeaponCargoGlobal ["CUP_launch_M136", 5];
+		//_box addWeaponCargoGlobal ["CUP_launch_M136", 5];
 
 		deleteVehicle _logic;
 
