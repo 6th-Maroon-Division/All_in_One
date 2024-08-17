@@ -41,3 +41,19 @@ class CfgMods
 		dir = "A6MD\All_in_One";
 	};
 };
+
+class CfgFactionClasses
+{
+	class A6MD_Faction_6MD // Category class, you point to it in editorCategory property
+	{
+		displayName = "6MD"; // Name visible in the list
+	};
+};
+
+class CfgEditorSubcategories
+{
+	class A6MD_6MD_Man // Category class, you point to it in editorSubcategory property
+	{
+		displayName = "Man"; // Name visible in the list
+	};
+};
