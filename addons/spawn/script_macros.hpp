@@ -15,7 +15,7 @@
         respawnMagazines[] = {};\
         linkedItems[] = {"Beret_6MD_Black"};\
         respawnLinkedItems[] = {"Beret_6MD_Black"};\
-        class EventHandlers : EventHandlers { init = ""; };\
+        class EventHandlers : EventHandlers { PostInit = "params ['_entity']; [_entity,"###DISPLAYNAME##"] call A6MD_fnc_spawn_init;";};\
         faction = "A6MD_Faction_6MD";\
 		editorSubcategory="A6MD_6MD_Man";\
         editorPreview = "\A6MD\All_in_One\addons\spawn\preview\PreviewBluefore.jpg";\

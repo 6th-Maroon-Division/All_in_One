@@ -2,26 +2,64 @@
 	#define script_macros
 	#include "script_macros.hpp"
 #endif
-
-	class B_officer_F;
-	class B_medic_F;
-	class B_engineer_F;
-	class B_soldier_UAV_F;
-	class B_soldier_SL_F;
-	class B_soldier_TL_F;
-	class B_soldier_GL_F;
-	class B_soldier_AR_F;
-	class B_soldier_AT_F;
-	class B_soldier_LAT_F;
-	class B_soldier_A_F;
-	class B_soldier_F;
-	class B_soldier_AAT_F;
-	class B_soldier_M_F;
-	class B_crew_F;
-	class B_spotter_F;
-	class B_sniper_F;
-	class B_Helipilot_F;
-	class B_helicrew_F;
+	class B_Soldier_base_F;
+	class B_soldier_F: B_Soldier_base_F {
+        class EventHandlers;
+    };
+	class B_officer_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_medic_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_engineer_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_soldier_UAV_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_soldier_SL_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_soldier_TL_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_soldier_GL_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_soldier_AR_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_soldier_AT_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_soldier_LAT_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_soldier_A_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_soldier_AAT_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_soldier_M_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_crew_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_spotter_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_sniper_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_Helipilot_F: B_soldier_F {
+        class EventHandlers;
+    };
+	class B_helicrew_F: B_soldier_F {
+        class EventHandlers;
+    };
 
     MACRO_UNITB(Zeus,B_officer_F,Zeus)
     MACRO_UNITB(BZeus,B_officer_F,Backup Zeus)
