@@ -19,7 +19,7 @@ class CfgFunctions
 			file = "\A6MD\All_in_One\addons\core\scripts";
             class init
             {
-                postInit=1;
+                postInit=0;
             };
         };
     };
