@@ -71,6 +71,8 @@ class RscPicture
     h = 0.15;
 };
 
+class RscButtonArsenal;
+
 class RscListbox
 {
     access = 0;
@@ -117,23 +119,14 @@ class 6MD_Vehicle_Arsenal_Dialog
     
     class controlsBackground
     {
-        class Background: RscText
+        class UIBackground: RscText
         {
-            idc = IDC_BACKGROUND;
-            colorBackground[] = {0,0,0,0.7}; // Semi-transparent dark background
-            x = 0.1;
-            y = 0.1;
-            w = 0.8;
-            h = "0.033 * safezoneH"; // Covering 1/3 of the button
-        };
-        
-        class TitleBackground: RscText
-        {
-            colorBackground[] = {0.2,0.2,0.2,1};
-            x = 0.1;
-            y = 0.1;
-            w = 0.8;
-            h = "0.04 * safezoneH";
+            idc = IDC_UI_BACKGROUND;
+            colorBackground[] = {0.25, 0.25, 0.25, 0.95}; // Semi-transparent black
+            x = "0 * safezoneW";
+            y = "0 * safezoneH";
+            w = "0.305 * safezoneW";
+            h = "0.577 * safezoneH"; // Fullscreen background
         };
     };
     
@@ -143,49 +136,120 @@ class 6MD_Vehicle_Arsenal_Dialog
         {
             idc = IDC_LABEL_TITLE;
             text = "6MD Vehicle Arsenal";
-            x = 0.11;
-            y = 0.105;
-            w = 0.3;
+            x = "0.003 * safezoneW";
+            y = "0.0025 * safezoneH";
+            w = "0.2 * safezoneW";
             h = "0.03 * safezoneH";
         };
         
-        class ButtonWeapons: RscPicture
+        class ButtonWeapons: RscButtonArsenal
         {
             idc = IDC_BUTTON_WEAPONS;
-            text = "path\to\weapons\icon.paa"; // Path to your weapons icon image
-            x = 0.1;
-            y = 0.15;
-            w = "0.05 * safezoneW"; // Smaller icons
+            text = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArsenal\PrimaryWeapon_ca.paa"; // Path to your weapons icon image
+            x = "0.006 * safezoneW";
+            y = "0.03 * safezoneH";
+            w = "0.025 * safezoneW"; // Smaller icons
             h = "0.05 * safezoneH"; 
         };
         
-        class ButtonMisc: RscPicture
+        class ButtonMedic: RscButtonArsenal
+        {
+            idc = -1;
+            text = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArsenal\CargoMisc_ca.paa"; // Path to your misc icon image
+            x = "0.006 * safezoneW";
+            y = "0.085 * safezoneH";
+            w = "0.025 * safezoneW"; // Smaller icons
+            h = "0.05 * safezoneH"; 
+        };
+        
+        class ButtonClothing: RscButtonArsenal
+        {
+            idc = -1;
+            text = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArsenal\CargoMisc_ca.paa"; // Path to your misc icon image
+            x = "0.006 * safezoneW";
+            y = "0.14 * safezoneH";
+            w = "0.025 * safezoneW"; // Smaller icons
+            h = "0.05 * safezoneH"; 
+        };
+        
+        class ButtonAmmo: RscButtonArsenal
+        {
+            idc = -1;
+            text = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArsenal\CargoMisc_ca.paa"; // Path to your misc icon image
+            x = "0.006 * safezoneW";
+            y = "0.195 * safezoneH";
+            w = "0.025 * safezoneW"; // Smaller icons
+            h = "0.05 * safezoneH"; 
+        };
+        
+        class ButtonExplosiv: RscButtonArsenal
+        {
+            idc = -1;
+            text = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArsenal\CargoMisc_ca.paa"; // Path to your misc icon image
+            x = "0.006 * safezoneW";
+            y = "0.25 * safezoneH";
+            w = "0.025 * safezoneW"; // Smaller icons
+            h = "0.05 * safezoneH"; 
+        };
+        
+        class ButtonMisc: RscButtonArsenal
         {
             idc = IDC_BUTTON_MISC;
-            text = "path\to\misc\icon.paa"; // Path to your misc icon image
-            x = 0.1;
-            y = 0.22;
-            w = "0.05 * safezoneW"; // Smaller icons
+            text = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArsenal\CargoMisc_ca.paa"; // Path to your misc icon image
+            x = "0.006 * safezoneW";
+            y = "0.305 * safezoneH";
+            w = "0.025 * safezoneW"; // Smaller icons
             h = "0.05 * safezoneH"; 
+        };
+        
+        class ItemList: RscListbox
+        {
+            idc = IDC_ITEM_LIST;
+            x = "0.0375 * safezoneW";
+            y = "0.03 * safezoneH";
+            w = "0.1 * safezoneW";
+            h = "0.5 * safezoneH";
+        };
+
+        class ButtonAdd: RscButton
+        {
+            idc = IDC_BUTTON_ADD;
+            text = "+";
+            x = "0.19 * safezoneW";
+            y = "0.67 * safezoneH";
+            w = "0.04 * safezoneW";
+            h = "0.04 * safezoneH";
+            action = "hint 'Add button pressed';";
+        };
+
+        class ButtonRemove: RscButton
+        {
+            idc = IDC_BUTTON_REMOVE;
+            text = "-";
+            x = "0.05 * safezoneW";
+            y = "0.67 * safezoneH";
+            w = "0.04 * safezoneW";
+            h = "0.04 * safezoneH";
+            action = "hint 'Remove button pressed';";
         };
         
         class InventoryList: RscListbox
         {
             idc = IDC_INVENTORY_LIST;
-            x = 0.3;
-            y = 0.15;
-            w = 0.6;
-            h = 0.6;
+            x = "0.145 * safezoneW";
+            y = "0.03 * safezoneH";
+            w = "0.155 * safezoneW";
+            h = "0.5 * safezoneH";
         };
         
         class ButtonLoadout: RscButton
         {
             idc = IDC_BUTTON_LOADOUT;
             text = "Loadout";
-            x = 0.3;
-            y = 0.78;
-            w = 0.15;
-            h = 0.05;
+            x = "0.196 * safezoneW";
+            y = "0.5375 * safezoneH";
+            w = "0.05 * safezoneW";
+            h = "0.033 * safezoneH";
             action = "hint 'Loadout button pressed';";
         };
         
@@ -193,10 +257,10 @@ class 6MD_Vehicle_Arsenal_Dialog
         {
             idc = IDC_BUTTON_CLEAR;
             text = "Clear";
-            x = 0.45;
-            y = 0.78;
-            w = 0.15;
-            h = 0.05;
+            x = "0.25 * safezoneW";
+            y = "0.5375 * safezoneH";
+            w = "0.05 * safezoneW";
+            h = "0.033 * safezoneH";
             action = "hint 'Clear button pressed';";
         };
     };

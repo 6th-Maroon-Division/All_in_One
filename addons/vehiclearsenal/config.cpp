@@ -16,11 +16,13 @@ class CfgPatches
 
 class CfgFunctions
 {
-    class A6MD
+    class A6MD_vehiclearsenal
     {
-        class vehiclearsenal
+        class scripts
         {
             file = "\A6MD\All_in_One\addons\vehiclearsenal\scripts";
+            class open{};
+            class addleftbutton{};
         };
     };
 };
