@@ -12,3 +12,10 @@ git_hash = 0 # Default: 8
 
 [hemtt.release]
 archive = false
+
+[hemtt.launch.mods]
+workshop = [
+    "450814997", # CBA
+    "463939057", # ACE3
+    "894678801", # TFAR
+]
