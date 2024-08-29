@@ -9,7 +9,8 @@
 #define IDC_BUTTON_CLEAR      1301
 #define IDC_LABEL_TITLE       1400
 #define IDC_UI_BACKGROUND     1500
-
+#define IDC_arrowPlus         1600
+#define IDC_arrowMinus        1601
 
 #define true                    1
 #define false                   0

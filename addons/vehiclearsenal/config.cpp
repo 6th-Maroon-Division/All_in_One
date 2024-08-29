@@ -22,7 +22,6 @@ class CfgFunctions
         {
             file = "\A6MD\All_in_One\addons\vehiclearsenal\scripts";
             class open{};
-            class addleftbutton{};
         };
     };
 };
