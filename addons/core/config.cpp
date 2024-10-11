@@ -10,20 +10,6 @@ class CfgPatches
         units[] = {};
 	};
 };
-class CfgFunctions
-{
-    class A6MD
-    {
-        class core
-        {
-			file = "\A6MD\All_in_One\addons\core\scripts";
-            class init
-            {
-                postInit=0;
-            };
-        };
-    };
-};
 
 class CfgMods
 {
