@@ -17,4 +17,6 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                   name: 6MD_AIO
-                  path: .hemttout/@*
+                  path: .hemttout/@6md_aio
+                  include-hidden-files: true
+                  if-no-files-found: error
