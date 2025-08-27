@@ -1,24 +1,42 @@
-private["_logic", "_pos", "_exploname", "_PhoneBomb", "_bomb"];
-_logic=_this select 0;
-_exploname=_this select 1;
+// Run this on server side
+params ["_logic", "_exploname"];
 
-_pos = getPosATL _logic;
+private _pos = getPosATL _logic;
 deleteVehicle _logic;
 
-_PhoneBomb = "Explosive" createVehicle _pos;
-sleep 0.1;
+// Spawn phone prop
+private _PhoneBomb = "Land_MobilePhone_old_F" createVehicle _pos;
+_PhoneBomb setPosATL _pos;
+_PhoneBomb setVectorUp surfaceNormal _pos;
 
-_PhoneBomb say3D ["A6MD_nokiabomb_oldnokia", 25, 1, false, 0];
-_PhoneBomb hideObject true;
+// Play ringtone globally
+[_PhoneBomb, ["A6MD_nokiabomb_oldnokia", 25, 1, false, 0]] remoteExec ["say3D", 0, true];
 
+// Hide the phone model (but keep variable)
+hideObjectGlobal _PhoneBomb;
+
+// Add Zeus editability
 {
-	_x addCuratorEditableObjects[[_PhoneBomb], true];
+    _x addCuratorEditableObjects [[_PhoneBomb], true];
 } forEach allCurators;
 
+// Wait, then replace with explosive
 sleep 9.5;
-if(isNull _PhoneBomb)exitWith{};
-deleteVehicle _PhoneBomb;
-sleep 0.1;
-_bomb = createVehicle ["IEDLandSmall_Remote_Ammo", _pos, [], 0, "CAN_COLLIDE"];
+if (isNull _PhoneBomb) exitWith {};
 
-[[_bomb], 0] call ace_explosives_fnc_scriptedExplosive;
+private _swapPos = getPosATL _PhoneBomb;
+deleteVehicle _PhoneBomb;
+
+sleep 0.1;
+
+// Spawn actual explosive
+private _bomb = createVehicle [_exploname, _swapPos, [], 0, "CAN_COLLIDE"];
+_bomb setVectorUp surfaceNormal _swapPos;
+
+// (Optional) Zeus editability
+{
+    _x addCuratorEditableObjects [[_bomb], true];
+} forEach allCurators;
+
+// Arm it with ACE
+[_bomb] call ace_explosives_fnc_scriptedExplosive;

@@ -11,7 +11,7 @@ if (_activated) then {
 	if !(isNull (attachedTo _logic)) then {
 		_pos = getPosATL (attachedTo _logic);
 	};
-	_dir = _logic getvariable ["dir", random 360];
+	_dir = _logic getVariable ["dir", random 360];
 
 	_PhoneBomb = "Explosive" createVehicle [0, 0, 0];
 	_PhoneBomb setPosATL _pos;

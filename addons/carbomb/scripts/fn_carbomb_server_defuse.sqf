@@ -8,5 +8,5 @@ _vehicle setVariable ["Bomb", "Defused"];
 [_vehicle, "Defused"] remoteExec ["A6MD_fnc_carbomb_common_defuse", -2, true];
 _holder = createVehicle ["GroundWeaponHolder", _c4Pos, [], 0, "CAN_COLLIDE"];
 _cutter = createVehicle ["Land_Pliers_F", _cutterPos, [], 0, "CAN_COLLIDE"];
-_cutter setdir (_cutterrot + 120);
+_cutter setDir (_cutterrot + 120);
 _holder addMagazineCargoGlobal ["DemoCharge_Remote_Mag", 1];

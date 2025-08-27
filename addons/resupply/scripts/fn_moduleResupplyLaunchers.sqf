@@ -13,7 +13,7 @@ if (_activated) then {
 		if !(isNull (attachedTo _logic)) then {
 			_pos = getPosATL (attachedTo _logic);
 		};
-		_dir = _logic getvariable ["dir", random 360];
+		_dir = _logic getVariable ["dir", random 360];
 		_h = _pos param [2, 0];
 		_h = _h + 110;
 		_pos set [2, _h];

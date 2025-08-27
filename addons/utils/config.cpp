@@ -34,7 +34,7 @@ class CfgMovesBasic {
 			class LadderCivilStatic;
 			class LadderCivilUpLoop: LadderCivilStatic
 			{
-				speed="1.05/(2/3)";
+				speed=1.575;
 			};
 		};	
 	};
@@ -42,5 +42,5 @@ class CfgMovesBasic {
 
 class CfgAnimation
 {
-	ladderSpeed="0.5/(1/3)";
+	ladderSpeed=1.5;
 };

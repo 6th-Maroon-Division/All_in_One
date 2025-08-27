@@ -20,5 +20,5 @@ player playMove "Acts_carFixingWheel";
 	_player = _args select 0;
 	_car = _args select 1;
 
-	player switchmove "";
+	player switchMove "";
 }, format["Disarming IED"]] call ace_common_fnc_progressBar;
