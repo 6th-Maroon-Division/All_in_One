@@ -5,7 +5,7 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = 2.06;
-        requiredAddons[] = {"A6MD_All_in_One_core","A3_UI_F"};
+        requiredAddons[] = {"A6MD_All_in_One_core","A3_UI_F","A3_Ui_F_AoW","A3_Ui_F_Bootcamp","A3_Ui_F_Curator","A3_Ui_F_Data","A3_Ui_F_Decade","A3_Ui_F_Enoch","A3_Ui_F_Exp","A3_Ui_F_Exp_A","A3_Ui_F_Heli","A3_Ui_F_Jets","A3_Ui_F_Kart","A3_Ui_F_Mark","A3_Ui_F_MP_Mark","A3_Ui_F_Oldman","A3_Ui_F_Orange","A3_Ui_F_Patrol","A3_Ui_F_Tacops","A3_Ui_F_Tank"};
     };
 };
 
@@ -21,6 +21,7 @@ class CfgMainMenuSpotlight
     delete ApexProtocol;
     delete EastWind;
     delete Orange_Campaign;
+    delete Orange_CampaignGerman;
     delete BootCamp;
     delete Tacops_Campaign;
     delete OldMan;
@@ -42,7 +43,7 @@ class CfgMainMenuSpotlight
         text = "Main OP Server";
         textIsQuote = 0;
         picture = "";
-        video = "A6MD\All_in_One\addons\mainmenu\data\intro.ogv";
+        video = "";
         action = "connectToServer ['88.99.148.143', 2008, 'Grey']";
         actionText = "Join";
         condition = "true";
@@ -56,7 +57,7 @@ class CfgMainMenuSpotlight
         text = "Antistasi Server";
         textIsQuote = 0;
         picture = "";
-        video = "A6MD\All_in_One\addons\mainmenu\data\intro.ogv";
+        video = "";
         action = "connectToServer ['88.99.148.143', 2000, 'Grey']";
         actionText = "Join";
         condition = "true";
@@ -70,12 +71,25 @@ class CfgMainMenuSpotlight
         text = "Training Server";
         textIsQuote = 0;
         picture = "";
-        video = "A6MD\All_in_One\addons\mainmenu\data\intro.ogv";
+        video = "";
         action = "connectToServer ['88.99.148.143', 2004, 'Grey']";
         actionText = "Join";
         condition = "true";
         tip = "6MD training ground.";
         priority = 0;
+    };
+    
+    class AoW_Showcase_Future
+    {
+        condition = "false";
+    };
+    class Orange_Campaign
+    {
+        condition = "false";
+    };
+    class Tacops_Campaign_01
+    {
+        condition = "false";
     };
 };
 
@@ -86,7 +100,7 @@ class RscDisplayMain
         class A6MD_Background: RscPicture
         {
             idc = -1;
-            text = "A6MD\All_in_One\addons\mainmenu\data\intro.ogv";
+            text = "A6MD\All_in_One\addons\mainmenu\data\image.jpg";
             x = "safezoneX";
             y = "safezoneY";
             w = "safezoneW";
