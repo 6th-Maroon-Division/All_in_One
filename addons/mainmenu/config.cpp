@@ -5,7 +5,143 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = 2.06;
-        requiredAddons[] = {"A6MD_All_in_One_core","A3_UI_F","A3_Ui_F_AoW","A3_Ui_F_Bootcamp","A3_Ui_F_Curator","A3_Ui_F_Data","A3_Ui_F_Decade","A3_Ui_F_Enoch","A3_Ui_F_Exp","A3_Ui_F_Exp_A","A3_Ui_F_Heli","A3_Ui_F_Jets","A3_Ui_F_Kart","A3_Ui_F_Mark","A3_Ui_F_MP_Mark","A3_Ui_F_Oldman","A3_Ui_F_Orange","A3_Ui_F_Patrol","A3_Ui_F_Tacops","A3_Ui_F_Tank"};
+        requiredAddons[] = {"A6MD_All_in_One_core","A3_UI_F"};
+    };
+    class A6MD_All_in_One_mainmenu_AoW
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_AoW"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Bootcamp
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Bootcamp"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Curator
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Curator"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Data
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Data"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Decade
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Decade"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Enoch
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Enoch"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Exp
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Exp"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Exp_A
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Exp_A"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Heli
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Heli"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Jets
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Jets"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Kart
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Kart"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Mark
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Mark","A3_Ui_F_MP_Mark"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Oldman
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Oldman"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Orange
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Orange"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Patrol
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Patrol"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Tacops
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Tacops"};
+        skipWhenMissingDependencies = 1;
+    };
+    class A6MD_All_in_One_mainmenu_Tank
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 2.06;
+        requiredAddons[] = {"A3_Ui_F_Tank"};
+        skipWhenMissingDependencies = 1;
     };
 };
 
@@ -35,7 +171,6 @@ class CfgMainMenuSpotlight
     delete Tacops_Campaign_03;
     delete Tanks_Campaign_01;
     delete SP_FD14;
-    delete SP_FD14;
 
     // --- 1) Main OP Server tile ------------------------------------------------
     class A6MD_MainOp
@@ -46,12 +181,12 @@ class CfgMainMenuSpotlight
         video = "";
         action = "connectToServer ['88.99.148.143', 2008, 'Grey']";
         actionText = "Join";
-        condition = "true";
+        condition = "!( 'A3A_ultimate' in activatedAddons )";
         tip = "6MD OP server.";
         priority = 2;
     };
 
-    /** --- 2) Antistasi Server tile ----------------------------------------------
+    // --- 2) Antistasi Server tile ----------------------------------------------
     class A6MD_Antistasi
     {
         text = "Antistasi Server";
@@ -60,13 +195,13 @@ class CfgMainMenuSpotlight
         video = "";
         action = "connectToServer ['88.99.148.143', 2000, 'Grey']";
         actionText = "Join";
-        condition = "true";
+        condition = "'A3A_ultimate' in activatedAddons";
         tip = "6MD Antistasi server.";
         priority = 1;
     };
 
-     --- 3) Training Server tile -----------------------------------------------
-    class A6MD_Training
+    // --- 3) Training Server tile -----------------------------------------------
+    /**class A6MD_Training
     {
         text = "Training Server";
         textIsQuote = 0;
@@ -74,10 +209,10 @@ class CfgMainMenuSpotlight
         video = "";
         action = "connectToServer ['88.99.148.143', 2004, 'Grey']";
         actionText = "Join";
-        condition = "true";
+        condition = "!( 'A3A_ultimate' in activatedAddons )";
         tip = "6MD training ground.";
         priority = 0;
-    };*/
+    };**/
     
     class AoW_Showcase_Future
     {
