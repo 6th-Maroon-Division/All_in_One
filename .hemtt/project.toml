@@ -6,7 +6,7 @@ mainprefix = "A6MD"
 [version]
 major = 1 # Overrides path when set
 minor = 4
-patch = 1
+patch = 2
 build = 4 # Optional
 git_hash = 0 # Default: 8
 
