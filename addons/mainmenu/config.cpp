@@ -51,7 +51,7 @@ class CfgMainMenuSpotlight
         priority = 2;
     };
 
-    // --- 2) Antistasi Server tile ----------------------------------------------
+    /** --- 2) Antistasi Server tile ----------------------------------------------
     class A6MD_Antistasi
     {
         text = "Antistasi Server";
@@ -65,7 +65,7 @@ class CfgMainMenuSpotlight
         priority = 1;
     };
 
-    // --- 3) Training Server tile -----------------------------------------------
+     --- 3) Training Server tile -----------------------------------------------
     class A6MD_Training
     {
         text = "Training Server";
@@ -77,7 +77,7 @@ class CfgMainMenuSpotlight
         condition = "true";
         tip = "6MD training ground.";
         priority = 0;
-    };
+    };*/
     
     class AoW_Showcase_Future
     {
