@@ -44,7 +44,7 @@ class CfgMainMenuSpotlight
         textIsQuote = 0;
         picture = "";
         video = "";
-        action = "connectToServer ['88.99.148.143', 2008, 'Grey']";
+        action = "connectToServer ['188.40.124.119', 2008, 'Grey']";
         actionText = "Join";
         condition = "true";
         tip = "6MD OP server.";
